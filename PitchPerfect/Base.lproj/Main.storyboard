@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -76,7 +77,23 @@
                     <view key="view" contentMode="scaleToFill" id="ab6-8e-TR2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5u7-eW-vOj">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rua-xu-QUc">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="603"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mHe-0B-Hxu" firstAttribute="top" secondItem="5u7-eW-vOj" secondAttribute="bottom" id="For-iY-6dV"/>
+                            <constraint firstItem="5u7-eW-vOj" firstAttribute="leading" secondItem="ab6-8e-TR2" secondAttribute="leadingMargin" id="Llt-VC-Fwd"/>
+                            <constraint firstItem="5u7-eW-vOj" firstAttribute="top" secondItem="tmH-Io-d46" secondAttribute="bottom" id="o7T-gP-1Sj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5u7-eW-vOj" secondAttribute="trailing" id="y7Z-ED-9ff"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D7c-gS-1Wy" userLabel="First Responder" sceneMemberID="firstResponder"/>

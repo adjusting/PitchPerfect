@@ -63,7 +63,7 @@
                         <outlet property="recordButton" destination="Day-9K-7qw" id="DGs-e4-UbD"/>
                         <outlet property="recordingLabel" destination="EJC-v7-SWO" id="RnF-lO-Kku"/>
                         <outlet property="stopRecordingButton" destination="TET-sc-aCG" id="coh-Z8-Sp9"/>
-                        <segue destination="2vU-sk-Jpd" kind="show" identifier="stopRecoding" id="FhE-EA-xIS"/>
+                        <segue destination="2vU-sk-Jpd" kind="show" identifier="stopRecording" id="FhE-EA-xIS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
